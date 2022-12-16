@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Formularz kontaktowy</title>
+    <style>
+    *{
+     align: center;
+
+    }
+    a {
+            color: #F2E5E5;
+        }
+        a:link {
+            text-decoration: none
+        }
+
+        a:visited {
+            text-decoration: none
+        }
+
+        a:active {
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: none
+        }
+        body {
+            background: #2B3A55;
+            color:#F2E5E5;
+            text-align: justify;
+        }
+         h1 {
+            text-align: center;
+            color: #CE7777;
+        }
+        #open-contact-btn{
+       padding: 10px 20px;
+        vertical-align: middle;
+        }
+        #container{
+        padding-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 ><i>Formularz kontaktowy</i></h1>
+    <hr color="E8C4C4" width="800px"  align="center" />
+    <div id="contact" class="contact" align="center">
+        <form class="emailForm" method="POST" action="emailform.php">
+            <label>
+                Wpisz swojego maila
+                <br>
+                <input  type="email" placeholder="Wpisz tu twój email" required>
+                <br>
+                <br>
+            </label>
+            <label>
+                Temat
+                <br>
+                <input name="subject" placeholder="Wpisz tu temat wiadomości" required>
+            </label><br><br>
+            <label for="inp-message">
+                Treść wiadomości
+                <br>
+            </label>
+            <textarea name="message" id="inp-message" placeholder="Wpisz tu twoją wiadomość" required></textarea>
+           <br><br>
+            <button class="emailFormSubmit" name="submit" type="submit">Wyślij</button>
+
+            <div class="emailFormAlert"></div>
+        </form>
+
+
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="cofnij"><a href="Główna.html" id="cofnij">Do strony głównej</a></p>
+</body>
+</html>
